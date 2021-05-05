@@ -1,87 +1,93 @@
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     background-color: black;
     font-size: 22px;
     color: seashell;
     font-family: Helvetica, sans-serif;
-    color: wheat;
     text-align: center;
     opacity: 0.9;
+    width: 100%;
+    justify-content: center;
 }
 header{
     display: flex;
     align-items: center;
-    margin-left: 10px;
     height: 69px;
     background-color: black;
     border-bottom: 1px solid seashell;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /*-----------------------------------*/
 /* Menu de Navigation */
 .logo {
     height: 50px;
+    padding: 10px;
 }
-nav {
+nav ul {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     gap: 20px;
+    padding-right: 10px;
 }
-nav li a {
+nav ul li a {
     color: seashell;
     gap: 10px;
+}
+/*----------------------------------*/
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 50px;
 }
 
 /*-----------------------------------*/
 /* page de bienvenue (landing page) */
 #landing-page {
-    height: 700px;
-    width: 1200px auto;
-    margin: 0 50px;
     display: flex;
-    justify-content: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url('./images/img-mission-background.jpg');
     align-items: center;
 }
-#landing-page img{
-    
-}
-h2, h4 {
-    margin: 0px;
+#landing-page .content{
     background-color: black;
+    width: 100%;
 }
+
 
 /*------------------------------------*/
 /* products */
 #teas {
-    width: 1000px auto;
-    min-height: 400px;
+    width: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
 }
-.tea-box {
+.tea-box img {
     width: 300px;
     height: 200px;
-    background-size: cover;
-    background-position: center;
-    margin: 50px 0;
-    position: relative;
+    border-radius: 15px 15px 0 0;
+}
+.tea-box {
+    margin-bottom: 30px;
     border-radius: 15px;
     box-shadow: 10px 10px 25px darkslategrey;
 }
 .tea-box:hover {
-    width: 306px;
-    height: 204px;
     box-shadow: 10px 10px 30px lightslategray;
 }
 
 .tea-details {
-    position: absolute;
     width: 100%;
-    bottom: 0;
-    margin: 0;
 }
 
 /*----------------------------------*/
@@ -89,33 +95,33 @@ h2, h4 {
 
 #locations {
     background-size: cover;
-    width: 1000px auto;
+    width: 1000px;
     height: 500px;
     display: flex;
-    flex-direction: row;
+    margin: 0 auto;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 50px;
+    background-image: url('./images/img-locations-background.jpg');
+}
+.locations {
+    display: flex;
 }
 .location {
-    height: 300px;
-    line-height: 60px;
     width: 300px;
     margin: 0 20px;
-    opacity: 1;
+    opacity: 0.7;
+    background-color: grey;
+    box-shadow: 5px 5px 15px darkslateblue;
 }
 .location:hover {
     border: 2px solid seashell;
-    width: 305px;
-    height: 305px;
+    background-color: black;
+    cursor: pointer;
 }
 
 /*----------------------------------*/
 /* Footer */
-.location h3 {
-    font-weight: 600;
-    font-size: 28px;
-}
 section footer h2 {
     background-color: transparent;
     color: gray;
@@ -127,5 +133,4 @@ footer p {
     margin-left: 20px;
     padding-bottom: 50px;
     position: absolute;
-    
 }
