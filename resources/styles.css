@@ -1,0 +1,151 @@
+* {
+    opacity: 0.9;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    font-size: 22px;
+    color: seashell;
+    font-family: Helvetica, sans-serif;
+    color: wheat;
+    text-align: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    height: 69px;
+    background-color: black;
+    border-bottom: 1px solid seashell;
+}
+.logo {
+    height: 50px;
+}
+/* Menu de Navigation */
+nav.nav {
+    display: flex;
+    list-style-type: none;
+    justify-items: flex-end;
+    background-color: sienna;
+    position: absolute;
+    right: 10px;
+}
+nav.nav li a {
+    color: seashell;
+    padding-left: 25px;
+}
+
+/* page de bienvenue (landing page) */
+.landing-page {
+    height: 700px;
+    background-image: url('/resources/images/img-mission-background.jpg');
+    width: 1200px auto;
+    /* position: relative; */
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, h4 {
+    margin: 0px;
+    background-color: black;
+
+}
+.big-title {
+    font-size: 80px;
+}
+/* products */
+.products {
+    margin: 180px;
+}
+.teas {
+    width: 1000px auto;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tea-box {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin: 50px 0;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 10px 10px 25px darkslategrey;
+}
+.tea-box:hover {
+    /* border: 2px solid seashell; */
+    width: 306px;
+    height: 204px;
+    box-shadow: 10px 10px 30px lightslategray;
+}
+.tea1 {
+    background-image: url('/resources/images/img-berryblitz.jpg');
+}
+.tea2 {
+    background-image: url('/resources/images/img-spiced-rum.jpg');
+}
+.tea3 {
+    background-image: url('/resources/images/img-donut.jpg');
+}
+.tea4 {
+    background-image: url('/resources/images/img-myrtle-ave.jpg');
+}
+.tea5 {
+    background-image: url('/resources/images/img-bedford-bizarre.jpg');
+}
+.tea-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+}
+/* Locations */
+
+.locations {
+    background-image: url('/resources/images/img-locations-background.jpg');
+    background-size: cover;
+    width: 1000px auto;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+}
+.location {
+    height: 300px;
+    line-height: 60px;
+    width: 300px;
+    margin: 0 20px;
+    opacity: 1;
+}
+.location:hover {
+    border: 2px solid seashell;
+    width: 305px;
+    height: 305px;
+}
+
+/* Footer */
+.location h3 {
+    font-weight: 600;
+    font-size: 28px;
+}
+section footer h2 {
+    background-color: transparent;
+    color: gray;
+    font-weight: 800;
+    font-size: 39px;
+    letter-spacing: -1px;
+}
+footer p {
+    margin-left: 20px;
+    padding-bottom: 50px;
+    position: absolute;
+    
+}
