@@ -27,7 +27,6 @@ nav.nav {
     display: flex;
     list-style-type: none;
     justify-items: flex-end;
-    background-color: sienna;
     position: absolute;
     right: 10px;
 }
@@ -39,12 +38,11 @@ nav.nav li a {
 /* page de bienvenue (landing page) */
 .landing-page {
     height: 700px;
-    background-image: url('/resources/images/img-mission-background.jpg');
     width: 1200px auto;
     /* position: relative; */
     margin: 0 50px;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -54,9 +52,7 @@ h2, h4 {
     background-color: black;
 
 }
-.big-title {
-    font-size: 80px;
-}
+
 /* products */
 .products {
     margin: 180px;
@@ -84,21 +80,7 @@ h2, h4 {
     height: 204px;
     box-shadow: 10px 10px 30px lightslategray;
 }
-.tea1 {
-    background-image: url('/resources/images/img-berryblitz.jpg');
-}
-.tea2 {
-    background-image: url('/resources/images/img-spiced-rum.jpg');
-}
-.tea3 {
-    background-image: url('/resources/images/img-donut.jpg');
-}
-.tea4 {
-    background-image: url('/resources/images/img-myrtle-ave.jpg');
-}
-.tea5 {
-    background-image: url('/resources/images/img-bedford-bizarre.jpg');
-}
+
 .tea-details {
     position: absolute;
     width: 100%;
@@ -108,7 +90,6 @@ h2, h4 {
 /* Locations */
 
 .locations {
-    background-image: url('/resources/images/img-locations-background.jpg');
     background-size: cover;
     width: 1000px auto;
     height: 500px;
